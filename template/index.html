@@ -1,0 +1,1348 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!--<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Trường Đại học Công nghiệp Thành phố Hồ Chí Minh" />
+    <meta name="keywords"
+        content="Trường Đại học Công nghiệp TP.HCM, Trường Đại học trọng điểm của Bộ Công Thương, www.iuh.edu.vn, iuh" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="http://iuh.edu.vnimage/logo.png" />
+    <link href="/templates/images/icon.ico" rel="shortcut icon">
+    <title>IUH - Trường Đại học Công nghiệp TP.HCM</title>
+    <!-- Include bootstrap css -->
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet" />
+
+    <!-- Include Awesome Icon -->
+    <link href="css/font-awesome.css" type="text/css" rel="stylesheet">
+
+    <!-- Site style -->
+    <link href="css/siteStyle.css" type="text/css" rel="stylesheet" />
+
+    <!-- Menu, Slide Style -->
+    <link href="css/menuStyle.css" rel="stylesheet" type="text/css">
+
+    <!-- Include style responsive -->
+    <link href="css/style-responsive.css" type="text/css" rel="stylesheet" />
+
+    <!-- Popup style -->
+    <link rel="stylesheet" href="css/chat-popup.css">
+
+    <style type="text/css">
+        .mess-animation {
+            position: fixed;
+            right: 3%;
+            bottom: 5%;
+            z-index: 99;
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            cursor: pointer;
+        }
+
+        .mess-animation img {
+            background: none;
+            width: 50px;
+            height: 50px;
+            position: relative;
+            margin: 0 auto;
+            border-radius: 100%;
+            animation: play 2s ease infinite;
+            -webkit-backface-visibility: hidden;
+            -moz-backface-visibility: hidden;
+            -ms-backface-visibility: hidden;
+            backface-visibility: hidden;
+            display: block;
+        }
+
+        .mess-animation img {
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            /*z-index: 9999;*/
+            background: #ffffff;
+        }
+
+        .mess-animation div {
+            background: #bf0000c7;
+            display: block;
+            position: absolute;
+            right: 0;
+            height: 50px;
+            border-radius: 29px;
+            line-height: 49px;
+            font-size: 19px;
+            color: #fff;
+            top: 0;
+            /*padding: 0 25px 0 60px;*/
+            z-index: -1;
+            font-weight: bold;
+            letter-spacing: 1px;
+            white-space: nowrap;
+            width: 50px;
+            overflow: hidden;
+            /*text-overflow: ellipsis;*/
+            -webkit-transition: width .35s ease-in-out;
+            transition: width .35s ease-in-out;
+        }
+
+        .mess-animation:hover div {
+            width: 230px;
+        }
+
+        .mess-animation div span {
+            margin: 0 60px 0 25px;
+        }
+
+        @keyframes play {
+            0% {
+                transform: scale(1);
+            }
+
+            15% {
+                box-shadow: 0 0 0 2px rgba(191, 0, 0, 0.6);
+            }
+
+            25% {
+                box-shadow: 0 0 0 4px rgba(191, 0, 0, 0.6), 0 0 0 8px rgba(191, 0, 0, 0.4);
+            }
+
+            25% {
+                box-shadow: 0 0 0 6px rgba(191, 0, 0, 0.6), 0 0 0 12px rgba(191, 0, 0, 0.4);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Area page -->
+    <div id="page">
+        <!-- Area header -->
+        <header id="page-header">
+            <div class="header-top">
+                <div class="h-t-body">
+                    <div class="container">
+                        <ul class="h-t-left">
+                            <li>
+                                <a target="_blank" href="https://gv.iuh.edu.vn/login.html">
+                                    <i class="fa fa-tv"></i> E-OFFICE
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://outlook.office.com/owa/?realm=iuh.edu.vn">
+                                    <i class="fa fa-envelope-o"></i> EMAIL
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="http://lib.iuh.edu.vn">
+                                    <i class="fa fa fa-book"></i> THƯ VIỆN - THÔNG TIN
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="h-t-right">
+                            <li>
+                                <a href="/vi/connect-s91.html">KẾT NỐI</a>|<a href="/vi/contact-us-s90.html">LIÊN HỆ</a>
+                            </li>
+                            <li class="h-t-r-lang">
+                                <a title="Tiếng Việt" href="/vi" class="vn active"
+                                    style="padding: 0; margin-right: 10px;">
+                                    <img alt="" src="images/icon-flag-vn.png">
+                                </a>
+                                <a title="English" href="/en" style="padding: 0;" class="en ">
+                                    <img alt="" src="images/icon-flag-en.png">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header-logo">
+                <div class="container">
+                    <div class="col-md-3 logo-left">
+                        <a href="/vi" class="logo"> <img alt="iuh" title="iuh" src="images/logo.png" width="200px">
+                        </a>
+                    </div>
+                    <div class="col-md-9 logo-right">
+                        <div class="right-up-title">BỘ CÔNG THƯƠNG</div>
+                        <div class="right-title">TRƯỜNG ĐẠI HỌC CÔNG NGHIỆP TP. HỒ CHÍ MINH</div>
+                        <div class="right-sub-title">Đổi mới, nâng tầm cao mới - Năng động, hội nhập toàn cầu</div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-menu">
+                <!--/.navbar-->
+                <nav class="navbar navbar-default" role="navigation">
+                    <div class="navbar-header">
+                        <div class="container">
+                            <div class="navbar-toggle navbar-logo">
+                                <ul class="h-t-left">
+                                    <li>
+                                        <a target="_blank" href="https://gv.iuh.edu.vn">
+                                            <i class="fa fa-tv"></i> EGOV
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="https://outlook.office.com/owa/?realm=iuh.edu.vn">
+                                            <i class="fa fa-envelope-o"></i> EMAIL
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div style="float: right;">
+                                <button type="button" class="navbar-toggle navbar-menu" data-toggle="collapse"
+                                    data-target="#collapse-menu">
+                                    <span class="icon-bar" style="margin: 0;"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <i class="fa fa-times"></i>
+                                    MENU
+                                </button>
+                                <button type="button" class="navbar-toggle navbar-search" data-toggle="collapse"
+                                    data-target="#collapse-search">
+                                    <span class="sr-only">Toggle search</span>
+                                    <span class="fa fa-search"></span>
+                                </button>
+                                <div class="navbar-toggle navbar-lang">
+                                    <a title="Tiếng Việt" href="/en" class="vn active">
+                                        VN/EN
+                                    </a>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="collapse navbar-collapse" id="collapse-search">
+                        <div class="container">
+                            <form method="get" action="/vi/search" class="navbar-form navbar-right form-search-top"
+                                role="search">
+                                <label for="search-top" class="lbl-search-top">Tìm kiếm</label>
+                                <div class="form-group has-feedback">
+                                    <input type="text" name="keyword" id="search-top" class="form-control txt-search"
+                                        placeholder='Tìm kiếm...'>
+                                    <button class="fa fa-search submit-search"></button>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!--/.navbar-header-->
+                    <div class="collapse navbar-collapse" id="collapse-menu">
+                        <div class="container">
+                            <ul class="nav navbar-nav">
+                                <li>
+                                    <a target="" href="/vi">
+                                        <span class="menu-lbl"><i class="fa fa-home" aria-hidden="true"></i></span>
+                                    </a>
+                                </li>
+
+
+                                <li class="dropdown">
+
+                                    <a class="dropdown-toggle" data-toggle="dropdown" target=""
+                                        href="/vi/gioi-thieu-s104.html">
+                                        <span class="menu-lbl">Giới thiệu</span>
+
+                                        <span class="glyphicon glyphicon-triangle-bottom"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+
+
+
+                                        <li>
+
+                                            <a target="" href="/vi/gioi-thieu-chung-s87.html">
+                                                <span class="menu-lbl">Giới thiệu chung</span>
+                                            </a>
+                                        </li>
+
+
+                                        <li>
+
+                                            <a target="" href="/vi/tam-nhin-su-mang-muc-tieu-chien-luoc-s14.html">
+                                                <span class="menu-lbl">Tầm nhìn - Sứ mạng - Mục tiêu chiến lược</span>
+                                            </a>
+                                        </li>
+
+
+                                        <li>
+
+                                            <a target="" href="/vi/so-do-bo-may-to-chuc-s101.html">
+                                                <span class="menu-lbl">Sơ đồ bộ máy tổ chức</span>
+                                            </a>
+                                        </li>
+
+
+                                        <li>
+
+                                            <a target="" href="/vi/doi-ngu-s17.html">
+                                                <span class="menu-lbl">Đội ngũ</span>
+                                            </a>
+                                        </li>
+                                        <li>
+
+                                            <a target="" href="/vi/co-so-vat-chat-s19.html">
+                                                <span class="menu-lbl">Cơ sở vật chất</span>
+                                            </a>
+                                        </li>
+
+
+                                        <li>
+
+                                            <a target="" href="/vi/ba-cong-khai-fi47">
+                                                <span class="menu-lbl">Ba công khai</span>
+                                            </a>
+                                        </li>
+                                        <li>
+
+                                            <a target="" href="/vi/chinh-sach-chat-luong-s105.html">
+                                                <span class="menu-lbl">Chính sách chất lượng</span>
+                                            </a>
+                                        </li>
+
+
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown">
+
+                                    <a class="dropdown-toggle" data-toggle="dropdown" target=""
+                                        href="/vi/dao-tao-s24.html">
+                                        <span class="menu-lbl">Đào tạo</span>
+
+                                        <span class="glyphicon glyphicon-triangle-bottom"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+
+                                            <a target="_blank" href="http://pdt.iuh.edu.vn/vi/">
+                                                <span class="menu-lbl">Chuyên trang đào tạo</span>
+                                            </a>
+                                        </li>
+                                        <li>
+
+                                            <a target="" href="/vi/dao-tao-quoc-te-s106.html">
+                                                <span class="menu-lbl">Đào tạo Quốc tế</span>
+                                            </a>
+                                        </li>
+
+
+
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown">
+
+                                    <a class="dropdown-toggle" data-toggle="dropdown" target=""
+                                        href="/vi/tuyen-sinh-s.html">
+                                        <span class="menu-lbl">Tuyển sinh</span>
+
+                                        <span class="glyphicon glyphicon-triangle-bottom"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+
+
+                                        <li>
+
+                                            <a target="_blank" href="http://tuyensinh.iuh.edu.vn/">
+                                                <span class="menu-lbl">Tuyển sinh Đại học</span>
+                                            </a>
+                                        </li>
+
+
+                                        <li>
+
+                                            <a target=""
+                                                href="https://ipe.iuh.edu.vn/vi/category/thong-tin-tuyen-sinh/">
+                                                <span class="menu-lbl">Tuyển sinh chương trình liên kết</span>
+                                            </a>
+                                        </li>
+
+
+                                        <li>
+
+                                            <a target=""
+                                                href="https://ipe.iuh.edu.vn/vi/category/thong-tin-tuyen-sinh/">
+                                                <span class="menu-lbl">Tuyển sinh trình độ Tiến sĩ - Thạc sĩ</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+
+                                    <a target="" href="/vi/nghien-cuu-fi13">
+                                        <span class="menu-lbl">Nghiên cứu</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a target="" href="/vi/sinh-vien-fi23">
+                                        <span class="menu-lbl">Sinh viên</span>
+                                    </a>
+                                </li>
+
+                                <li>
+
+                                    <a target="" href="/vi/giang-vien-fi39">
+                                        <span class="menu-lbl">Giảng viên</span>
+                                    </a>
+                                </li>
+                                <li>
+
+                                    <a target="" href="https://sv.iuh.edu.vn/tra-cuu-van-bang.html">
+                                        <span class="menu-lbl">Văn bằng</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <form method="get" action="/vi/search" class="navbar-form navbar-right form-search-top"
+                                role="search">
+                                <div class="form-group has-feedback">
+                                    <input type="text" name="keyword" class="form-control txt-search"
+                                        placeholder='Tìm kiếm...'>
+                                    <button class="fa fa-search submit-search"></button>
+                                </div>
+                            </form>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <!--/.navbar-collapse-->
+                    <div class="clearfix"></div>
+                </nav>
+                <!--/.navbar-->
+                <div class="clearfix"></div>
+            </div>
+            <div class="header-logo-mobile" style="padding: 10px 0;">
+                <div class="container">
+                    <a href="/vi">
+                        <img class="banner-small" alt="iuh" title="iuh" style="width: 100%;"
+                            src="images/bannerIUH_small.png">
+                        <img class="banner-medium" alt="iuh" title="iuh" style="width: 100%;"
+                            src="images/bannerIUH_medium.png">
+                    </a>
+                </div>
+                <!--
+                    <div class="container">
+                        <div class="col-sm-3 logo-left">
+                            <a href="/vi" class="logo">
+                                <img alt="iuh" title="iuh" src="images/logo.png" width="200px">
+                            </a>
+                        </div>
+                        <div class="col-sm-9 logo-right">
+                            <div class="right-up-title">BỘ CÔNG THƯƠNG</div>
+                            <div class="right-title">
+                                <span>TRƯỜNG ĐẠI HỌC CÔNG NGHIỆP</span>
+                                <span>TP. HỒ CHÍ MINH</span>
+                            </div>
+                            <div class="right-sub-title">Đổi mới, nâng tầm cao mới - Năng động, hội nhập toàn cầu</div>
+                        </div>
+                    </div>
+                    -->
+            </div>
+            <!-- include slideshow or intro image-->
+            <div class="header-side-show">
+
+                <div class="header-silde">
+                    <div class="container">
+                        <div class="row">
+                            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                                <!-- Indicators -->
+                                <!--<ol class="carousel-indicators">
+                                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                </ol>-->
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="item active">
+                                        <a href="">
+                                            <img src="images/banner.jpg" alt="...">
+                                        </a>
+                                    </div>
+                                    <!-- Controls -->
+                                    <a class="left carousel-control-iuh" href="#carousel-example-generic" role="button"
+                                        data-slide="prev">
+                                        <span class="fa fa-angle-left"></span>
+                                    </a>
+                                    <a class="right carousel-control-iuh" href="#carousel-example-generic" role="button"
+                                        data-slide="next">
+                                        <span class="fa fa-angle-right"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+            </div>
+            <div class="clearfix"></div>
+        </header>
+
+        <!-- Area content -->
+        <section id="page-content">
+            <div class="container">
+                <div class="content-left col-md-3">
+                    <div class="c-l-menu">
+                        <nav class="left-nav">
+                            <div class="left-nav-title">
+                                <p>Cơ cấu tổ chức</p>
+                                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                    data-target="#bs-example-navbar-collapse-2">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        Lãnh đạo
+                                        <span class="glyphicon glyphicon-triangle-bottom"></span>
+                                        <i class="fa fa-angle-right"></i>
+                                    </a>
+                                    <ul>
+                                        <li class="title">Lãnh đạo</li>
+
+                                        <li> <a target="" href="/vi/dang-uy-s22.html"> Đảng ủy </a> </li>
+                                        <li> <a target="" href="/vi/ban-giam-hieu-s23.html"> Ban giám hiệu </a> </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Các Phòng Ban
+                                        <span class="glyphicon glyphicon-triangle-bottom"></span>
+                                        <i class="fa fa-angle-right"></i>
+                                    </a>
+                                    <ul class="columns-2">
+                                        <li class="title">Các Phòng Ban</li>
+
+
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <li>
+                                                    <a target=""
+                                                        href="/vi/don-vi-chuc-nang-fi26/phong-to-chuc-hanh-chinh-a1158.html">Phòng
+                                                        Tổ chức - Hành chính</a>
+                                                </li>
+                                                <li>
+                                                    <a target=""
+                                                        href="/vi/don-vi-chuc-nang-fi26/phong-tai-chinh-ke-toan-a1160.html">Phòng
+                                                        Tài chính - Kế toán</a>
+                                                </li>
+                                                <li>
+                                                    <a target=""
+                                                        href="/vi/don-vi-chuc-nang-fi26/phong-ke-hoach-dau-tu-a1159.html">Phòng
+                                                        Kế hoạch - Đầu tư</a>
+                                                </li>
+                                                <li>
+                                                    <a target=""
+                                                        href="/vi/don-vi-chuc-nang-fi26/phong-dao-tao-a1161.html">Phòng
+                                                        Đào tạo</a>
+                                                </li>
+                                                <li>
+                                                    <a target=""
+                                                        href="/vi/don-vi-chuc-nang-fi26/phong-quan-ly-khoa-hoc-a1162.html">Phòng
+                                                        Quản lý Khoa học và Hợp tác quốc tế</a>
+                                                </li>
+                                                <li>
+                                                    <a target=""
+                                                        href="/vi/don-vi-chuc-nang-fi26/phong-cong-tac-sinh-vien-a1163.html">Phòng
+                                                        Công tác sinh viên</a>
+                                                </li>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <li><a target=""
+                                                        href="/vi/don-vi-chuc-nang-fi26/phong-khao-thi-va-dam-bao-chat-luong-a1166.html">Phòng
+                                                        Khảo thí và Đảm bảo chất lượng</a></li>
+                                                <li><a target=""
+                                                        href="/vi/don-vi-chuc-nang-fi26/phong-quan-tri-a1165.html">Phòng
+                                                        Quản trị</a></li>
+                                                <li><a target=""
+                                                        href="/vi/don-vi-chuc-nang-fi26/phong-dich-vu-a1167.html">Phòng
+                                                        Dịch vụ</a></li>
+                                                <li><a target=""
+                                                        href="/vi/don-vi-chuc-nang-fi26/phong-quan-ly-ky-tuc-xa-a1169.html">Phòng
+                                                        Quản lý Ký túc xá</a></li>
+                                                <li><a target="" href="/vi/tap-chi-khoa-hoc-va-cong-nghe-s103.html">Tạp
+                                                        chí Khoa học và Công nghệ</a></li>
+                                                <li><a target=""
+                                                        href="/vi/nha-xuat-ban-fi35/gioi-thieu-nha-xuat-ban-a1404.html">Nhà
+                                                        xuất bản</a></li>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Các Khoa
+                                        <span class="glyphicon glyphicon-triangle-bottom"></span>
+                                        <i class="fa fa-angle-right"></i>
+                                    </a>
+                                    <ul class="columns-2">
+                                        <li class="title">Các Khoa</li>
+
+
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <li>
+                                                    <a target=""
+                                                        href="/vi/don-vi-dao-tao-fi25/khoa-cong-nghe-co-khi-a1173.html">Khoa
+                                                        Công nghệ Cơ khí</a>
+                                                </li>
+                                                <li>
+                                                    <a target=""
+                                                        href="/vi/don-vi-dao-tao-fi25/khoa-cong-nghe-thong-tin-a1180.html">Khoa
+                                                        Công nghệ Thông tin</a>
+                                                </li>
+                                                <li>
+                                                    <a target=""
+                                                        href="/vi/don-vi-dao-tao-fi25/khoa-cong-nghe-dien-a1174.html">Khoa
+                                                        Công nghệ Điện</a>
+                                                </li>
+                                                <li>
+                                                    <a target=""
+                                                        href="/vi/don-vi-dao-tao-fi25/khoa-cong-nghe-dien-tu-a1175.html">Khoa
+                                                        Công nghệ Điện tử</a>
+                                                </li>
+                                                <li>
+                                                    <a target=""
+                                                        href="/vi/don-vi-dao-tao-fi25/khoa-cong-nghe-dong-luc-a1176.html">Khoa
+                                                        Công nghệ Động lực</a>
+                                                </li>
+                                                <li>
+                                                    <a target=""
+                                                        href="/vi/don-vi-dao-tao-fi25/khoa-cong-nghe-nhiet-lanh-a1178.html">Khoa
+                                                        Công nghệ Nhiệt - Lạnh</a>
+                                                </li>
+                                                <li>
+                                                    <a target=""
+                                                        href="/vi/don-vi-dao-tao-fi25/khoa-cong-nghe-may-thoi-trang-a1177.html">Khoa
+                                                        Công nghệ may - Thời trang</a>
+                                                </li>
+                                                <li>
+                                                    <a target=""
+                                                        href="/vi/don-vi-dao-tao-fi25/khoa-cong-nghe-hoa-hoc-a1179.html">Khoa
+                                                        Công nghệ Hóa học</a>
+                                                </li>
+                                                <li>
+                                                    <a target=""
+                                                        href="/vi/don-vi-dao-tao-fi25/khoa-ke-toan-kiem-toan-a1182.html">Khoa
+                                                        Kế toán - Kiểm toán</a>
+                                                </li>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <li><a target=""
+                                                        href="/vi/don-vi-dao-tao-fi25/khoa-khoa-hoc-co-ban-a1183.html">Khoa
+                                                        Khoa học Cơ bản</a></li>
+                                                <li><a target=""
+                                                        href="/vi/don-vi-dao-tao-fi25/khoa-ly-luan-chinh-tri-a1184.html">Khoa
+                                                        Lý luận Chính trị</a></li>
+                                                <li><a target=""
+                                                        href="/vi/don-vi-dao-tao-fi25/khoa-ngoai-ngu-a1185.html">Khoa
+                                                        Ngoại ngữ</a></li>
+                                                <li><a target=""
+                                                        href="/vi/don-vi-dao-tao-fi25/khoa-quan-tri-kinh-doanh-a1186.html">Khoa
+                                                        Quản trị Kinh doanh</a></li>
+                                                <li><a target=""
+                                                        href="/vi/don-vi-dao-tao-fi25/khoa-tai-chinh-ngan-hang-a1187.html">Khoa
+                                                        Tài chính - Ngân hàng</a></li>
+                                                <li><a target=""
+                                                        href="/vi/don-vi-dao-tao-fi25/khoa-thuong-mai-du-lich-a1188.html">Khoa
+                                                        Thương mại - Du lịch</a></li>
+                                                <li><a target=""
+                                                        href="/vi/don-vi-dao-tao-fi25/khoa-ky-thuat-xay-dung-a1303.html">Khoa
+                                                        Kỹ thuật Xây dựng</a></li>
+                                                <li><a target=""
+                                                        href="/vi/don-vi-dao-tao-fi25/khoa-luat-a1340.html">Khoa
+                                                        Luật</a></li>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Các Viện
+                                        <span class="glyphicon glyphicon-triangle-bottom"></span>
+                                        <i class="fa fa-angle-right"></i>
+                                    </a>
+                                    <ul>
+                                        <li class="title">Các Viện</li>
+
+                                        <li> <a target=""
+                                                href="/vi/don-vi-chuc-nang-fi26/vien-dao-tao-quoc-te-va-sau-dai-hoc-a1164.html">
+                                                Viện Đào tạo quốc tế và Sau Đại học </a> </li>
+                                        <li> <a target=""
+                                                href="/vi/don-vi-dao-tao-fi25/vien-cn-sinh-hoc-thuc-pham-a1190.html">
+                                                Viện Công nghệ Sinh học và Thực phẩm </a> </li>
+                                        <li> <a target=""
+                                                href="/vi/don-vi-dao-tao-fi25/vien-khcn-va-ql-moi-truong-a1191.html">
+                                                Viện Khoa học Công nghệ và Quản lý Môi trường </a> </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Các Trung tâm
+                                        <span class="glyphicon glyphicon-triangle-bottom"></span>
+                                        <i class="fa fa-angle-right"></i>
+                                    </a>
+                                    <ul>
+                                        <li class="title">Các Trung tâm</li>
+
+                                        <li> <a target=""
+                                                href="/vi/don-vi-chuc-nang-fi26/trung-tam-ngoai-ngu-a1940.html"> Trung
+                                                tâm Ngoại ngữ </a> </li>
+                                        <li> <a target=""
+                                                href="/vi/don-vi-dao-tao-fi25/trung-tam-giao-duc-quoc-phong-the-chat-a1123.html">
+                                                Trung tâm Giáo dục quốc phòng và Thể chất </a> </li>
+                                        <li> <a target=""
+                                                href="/vi/don-vi-chuc-nang-fi26/trung-tam-tu-van-va-ho-tro-sinh-vien-a1122.html">
+                                                Trung tâm Tư vấn và Hỗ trợ sinh viên </a> </li>
+                                        <li> <a target=""
+                                                href="/vi/don-vi-chuc-nang-fi26/trung-tam-thu-vien-a1124.html"> Trung
+                                                tâm Thư viện </a> </li>
+                                        <li> <a target=""
+                                                href="/vi/don-vi-chuc-nang-fi26/trung-tam-thong-tin-truyen-thong-a1633.html">
+                                                Trung tâm Thông tin - Truyền thông </a> </li>
+                                        <li> <a target=""
+                                                href="/vi/don-vi-chuc-nang-fi26/trung-tam-quan-tri-he-thong-a1634.html">
+                                                Trung tâm Quản trị Hệ thống </a> </li>
+                                        <li> <a target="_blank" href="http://www.rdtech-iuh.vn/"> Trung tâm NC&PT CN Máy
+                                                công nghiệp (R&Dtech) </a> </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Các phân hiệu
+                                        <span class="glyphicon glyphicon-triangle-bottom"></span>
+                                        <i class="fa fa-angle-right"></i>
+                                    </a>
+                                    <ul>
+                                        <li class="title">Các phân hiệu</li>
+
+                                        <li> <a target="" href="/vi/phan-hieu-quang-ngai-s93.html"> Phân hiệu Quảng Ngãi
+                                            </a> </li>
+                                        <li> <a target="" href="/vi/co-so-thanh-hoa-s94.html"> Cơ sở Thanh Hóa </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Đoàn thể
+                                        <span class="glyphicon glyphicon-triangle-bottom"></span>
+                                        <i class="fa fa-angle-right"></i>
+                                    </a>
+                                    <ul>
+                                        <li class="title">Đoàn thể</li>
+
+                                        <li> <a target="" href="/vi/doan-the-fi36/cong-doan-a1192.html"> Công đoàn </a>
+                                        </li>
+                                        <li> <a target="" href="/vi/doan-the-fi36/doan-thanh-nien-a1193.html"> Đoàn
+                                                Thanh niên </a> </li>
+                                        <li> <a target="" href="/vi/doan-the-fi36/hoi-sinh-vien-a1668.html"> Hội Sinh
+                                                viên </a> </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!--end c-l-menu -->
+                </div>
+                <div class="content-right col-md-9">
+                    <div class="col-md-12 content-top">
+                        <!-- First Block -->
+                        <div class="c-r-element col-md-6 col-sm-6">
+                            <div class="element-title">
+                                <a href="/vi/thong-bao-fi20">
+                                    THÔNG BÁO
+                                </a>
+                                <a href="/vi/thong-bao-fi20" class="btn-expand">
+                                    <span>Xem tất cả</span>
+                                </a>
+                            </div>
+                            <div class="element-content">
+
+                                <div class="e-c-main">
+                                    <div class="main-title">
+                                        <i class="fa fa-caret-right"></i>
+                                        <a title="Thông báo Tuyển sinh đào tạo liên thông từ trình độ Cao đẳng lên trình độ Đại học - Đợt 2 năm 2022"
+                                            href="/vi/thong-bao-fi20/thong-bao-tuyen-sinh-dao-tao-lien-thong-tu-trinh-do-cao-dang-len-trinh-do-dai-hoc-dot-2-nam-2022-a2015.html">
+                                            Thông báo Tuyển sinh đào tạo liên thông từ trình độ Cao đẳng lên trình...
+                                        </a>
+                                        <span class="sub-content">
+                                            16-10-2022
+                                        </span>
+                                        <span class="sub-content-hotnew">
+                                            <img src="images/hot-news.gif" />
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="e-c-extra">
+                                    <i class="fa fa-caret-right"></i>
+                                    <a href="/vi/thong-bao-fi20/thong-bao-v-v-thi-sat-hach-tieng-anh-dau-vao-doi-voi-sinh-vien-khoa-18-a2014.html"
+                                        title="Thông báo v/v thi sát hạch tiếng Anh đầu vào đối với sinh viên khóa 18">
+                                        Thông báo v/v thi sát hạch tiếng Anh đầu vào đối với sinh viên khóa 18
+                                    </a>
+                                    <span class="sub-content">
+                                        06-10-2022
+                                    </span>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <!--
+                    <div class="c-r-button">
+                        <a href="/vi/thong-bao-fi20" class="btn-grey">
+                            <span> Tất cả </span>
+                        </a>
+                    </div>
+                    -->
+                            <div class="clearfix"></div>
+                        </div>
+                        <!-- End First Block -->
+
+                        <!-- Second Block -->
+                        <div class="c-r-element col-md-6 col-sm-6">
+                            <div class="element-title">
+                                <a href="/vi/tuyen-sinh-fi16">
+                                    TUYỂN SINH
+                                </a>
+                                <a href="/vi/tuyen-sinh-fi16" class="btn-expand">
+                                    <span>Xem tất cả</span>
+                                </a>
+                            </div>
+                            <div class="element-content">
+                                <div class="e-c-main">
+                                    <div class="main-title">
+                                        <i class="fa fa-caret-right"></i>
+                                        <a title="Thông báo xét tuyển bổ sung bậc Đại học hệ chính quy năm 2022 tại cơ sở Thành phố Hồ Chí Minh"
+                                            href="/vi/tuyen-sinh-fi16/thong-bao-xet-tuyen-bo-sung-bac-dai-hoc-he-chinh-quy-nam-2022-tai-co-so-thanh-pho-ho-chi-minh-a2009.html">
+                                            Thông báo xét tuyển bổ sung bậc Đại học hệ chính quy năm 2022 tại cơ
+                                            sở...</a>
+                                        <span class="sub-content">
+                                            23-09-2022
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="e-c-extra">
+                                    <i class="fa fa-caret-right"></i>
+                                    <a href="/vi/tuyen-sinh-fi16/thong-bao-diem-trung-tuyen-bac-dai-hoc-he-chinh-quy-nam-2022-bang-phuong-thuc-xet-tuyen-su-dung-ket-qua-thi-tot-nghiep-thpt-a2002.html"
+                                        title="Thông báo điểm trúng tuyển bậc Đại học hệ Chính quy năm 2022 bằng phương thức xét tuyển sử dụng kết quả thi tốt nghiệp THPT">Thông
+                                        báo điểm trúng tuyển bậc Đại học hệ Chính quy năm 2022 bằng phương...
+                                    </a>
+                                    <span class="sub-content">
+                                        15-09-2022
+                                    </span>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <!--
+                    <div class="c-r-button">
+                        <a href="/vi/tuyen-sinh-fi16" class="btn-grey">
+                            <span> Tất cả </span>
+                        </a>
+                    </div>
+                    -->
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <!-- End Second Block -->
+                    </div>
+                    <div class="col-md-12 content-bottom">
+                        <!-- Third Block -->
+                        <div class="c-r-element col-md-6 col-sm-6">
+                            <div class="element-title">
+                                <a href="/vi/tin-tuc-su-kien-fi11">
+                                    TIN TỨC - SỰ KIỆN
+                                </a>
+                                <a href="/vi/tin-tuc-su-kien-fi11" class="btn-expand">
+                                    <span>Xem tất cả</span>
+                                </a>
+                            </div>
+                            <div class="element-content">
+                                <div class="e-c-main">
+                                    <div class="main-image">
+                                        <a title="Bộ trưởng Bộ Công Thương Nguyễn Hồng Diên dự lễ khai giảng tại Trường Đại học Công nghiệp TP. Hồ Chí Minh"
+                                            href="/vi/tin-tuc-su-kien-fi11/bo-truo-ng-bo-cong-thuong-nguyen-hong-dien-du-le-khai-giang-tai-truong-dai-hoc-cong-nghiep-tp-ho-chi-minh-a2017.html">
+                                            <img alt="" src="images/botruong.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="main-title">
+                                        <i class="fa fa-caret-right"></i>
+                                        <a title="Bộ trưởng Bộ Công Thương Nguyễn Hồng Diên dự lễ khai giảng tại Trường Đại học Công nghiệp TP. Hồ Chí Minh"
+                                            href="/vi/tin-tuc-su-kien-fi11/bo-truo-ng-bo-cong-thuong-nguyen-hong-dien-du-le-khai-giang-tai-truong-dai-hoc-cong-nghiep-tp-ho-chi-minh-a2017.html">
+                                            Bộ trưởng Bộ Công Thương Nguyễn Hồng Diên dự lễ khai giảng tại
+                                            Trường...</a>
+                                        <span class="sub-content">
+                                            20-10-2022
+                                        </span>
+                                        <span class="sub-content-hotnew">
+                                            <img style="width: 32px" src="images/hot-news.gif" />
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="e-c-extra">
+                                    <i class="fa fa-caret-right"></i>
+                                    <a href="/vi/tin-tuc-su-kien-fi11/dai-hoc-cong-nghiep-tp-ho-chi-minh-day-manh-doi-moi-toan-dien-phat-trien-nguon-nhan-luc-chat-luong-cao-a2018.html"
+                                        title="Đại học Công nghiệp TP. Hồ Chí Minh: Đẩy mạnh đổi mới toàn diện, phát triển nguồn nhân lực chất lượng cao">
+                                        Đại học Công nghiệp TP. Hồ Chí Minh: Đẩy mạnh đổi mới toàn diện, phát...
+                                    </a>
+                                    <span class="sub-content">
+                                        20-10-2022
+                                    </span>
+                                    <span class="sub-content-hotnew">
+                                        <img style="width: 32px" src="images/hot-news.gif" />
+                                    </span>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <!--
+                    <div class="c-r-button">
+                        <a href="/vi/tin-tuc-su-kien-fi11" class="btn-grey">
+                            <span> Tất cả </span>
+                        </a>
+                    </div>
+                    -->
+                            <div class="clearfix"></div>
+                        </div>
+                        <!-- End Third Block -->
+                        <!-- Fourth Block -->
+                        <div class="c-r-element col-md-6 col-sm-6">
+                            <div class="element-title">
+                                <a href="/vi/hop-tac-quoc-te-fi12">
+                                    HỢP TÁC QUỐC TẾ
+                                </a>
+                                <a href="/vi/hop-tac-quoc-te-fi12" class="btn-expand">
+                                    <span>Xem tất cả</span>
+                                </a>
+                            </div>
+                            <div class="element-content">
+                                <div class="e-c-main">
+                                    <div class="main-image">
+                                        <a title="Đoàn công tác IUH làm việc và ký kết hợp tác tại Canada"
+                                            href="/vi/hop-tac-quoc-te-fi12/doan-cong-tac-iuh-lam-viec-va-ky-ket-hop-tac-tai-canada-a2011.html">
+                                            <img alt="" src="images/canada-image.png">
+                                        </a>
+                                    </div>
+                                    <div class="main-title">
+                                        <i class="fa fa-caret-right"></i>
+                                        <a title="Đoàn công tác IUH làm việc và ký kết hợp tác tại Canada"
+                                            href="/vi/hop-tac-quoc-te-fi12/doan-cong-tac-iuh-lam-viec-va-ky-ket-hop-tac-tai-canada-a2011.html">
+                                            Đoàn công tác IUH làm việc và ký kết hợp tác tại Canada</a>
+                                        <span class="sub-content">
+                                            25-09-2022
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="e-c-extra">
+                                    <i class="fa fa-caret-right"></i>
+                                    <a href="/vi/hop-tac-quoc-te-fi12/doan-cong-tac-iuh-di-tham-quan-hoc-tap-kinh-nghiem-tai-nhat-ban-a1981.html"
+                                        title="Đoàn công tác IUH đi tham quan học tập kinh nghiệm tại Nhật Bản"> Đoàn
+                                        công tác IUH đi tham quan học tập kinh nghiệm tại Nhật Bản
+                                    </a>
+                                    <span class="sub-content">
+                                        12-07-2022
+                                    </span>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <!--
+                    <div class="c-r-button">
+                        <a href="/vi/hop-tac-quoc-te-fi12" class="btn-grey">
+                            <span> Tất cả </span>
+                        </a>
+                    </div>
+                    -->
+                            <div class="clearfix"></div>
+                        </div>
+                        <!-- End Fourth Block -->
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </section>
+        <!-- Area adv -->
+        <section id="page-adv">
+            <div class="container">
+                <div class="content-right banner-adv-right col-md-12">
+                    <a target="_blank" href="https://ipe.iuh.edu.vn/vi/category/thong-tin-tuyen-sinh/ ">
+                        <img alt="" src="images/sdh-2022.jpg" title="">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Area info -->
+
+        <section id="page-info">
+            <div class="container">
+                <div class="col-md-8 info-left">
+                    <div class="i-r-bottom col-md-12">
+                        <div class="l-c-element col-sm-6 img-lighter c-element-1">
+                            <p>
+                                <a href="/vi/iuh-quang-ngai-campus-s93.html">
+                                    Phân hiệu Quảng Ngãi
+                                </a>
+                            </p>
+                            <a href="/vi/iuh-quang-ngai-campus-s93.html">
+                                <img alt="" src="images/QN03.jpg">
+                            </a>
+                        </div>
+                        <div class="l-c-element col-sm-6 img-lighter c-element-2">
+                            <p>
+                                <a href="/vi/iuh-thanh-hoa-campus-s94.html">
+                                    Cơ sở Thanh Hóa
+                                </a>
+                            </p>
+                            <a href="/vi/iuh-thanh-hoa-campus-s94.html">
+                                <img alt="" src="images/TH03.jpg">
+                            </a>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="col-md-4 info-right">
+                    <div class="i-l-title">
+                        Video và Hình ảnh
+                        <a href="/vi/video-collections-fi38" class="btn-expand">
+                            <span>Xem tất cả</span>
+                        </a>
+                    </div>
+                    <div class="i-l-content video-image">
+                        <a
+                            href="http://iuh.edu.vn/vi/video-collections-fi38/video-about-the-industrial-university-of-ho-chi-minh-city-a1205.html">
+                            <img src="images/video-background.jpg">
+                            <span class="video-button"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cac don vi lien ket -->
+        <section id="donvi-info">
+            <div class="container">
+                <div class="donvi-conent">
+                    <span class="fa fa-angle-left donvi-prev"></span>
+                    <div class="content-slide">
+                        <div id="owl-iuh" class="owl-carousel">
+                            <div class="item">
+                                <a target="_blank" title=""
+                                    href="https://portal.vietcombank.com.vn/Pages/Home.aspx?devicechannel=default">
+                                    <img src="images/donvilienket/vietcombank.jpg">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a target="_blank" title="Microsoft Corporation" href="http://www.microsoft.com">
+                                    <img src="images/donvilienket/microsoft.png">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a target="_blank" title="Công ty TNHH LG ELECTRONICS VIỆT NAM HẢI PHÒNG"
+                                    href="http://partner.lge.com/vn/index.lge">
+                                    <img src="images/donvilienket/DN-LG_bg.jpg">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a target="_blank" title="Ngân hàng Nông Nghiệp và Phát triển Nông thôn Việt Nam"
+                                    href="http://www.agribank.com.vn">
+                                    <img src="images/donvilienket/DN-argribank_bg.jpg">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a target="_blank" title="Yamaha Motor Company" href="http://www.yamaha.com/">
+                                    <img src="images/donvilienket/DN-yamaha_bg.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <span class="fa fa-angle-right donvi-next"></span>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+        </section>
+
+        <!-- End cac don vi lien ket-->
+
+        <!-- Area footer -->
+        <footer id="page-footer">
+            <div class="container">
+                <div class="footer-top">
+                    <!--    Custom mobile   -->
+                    <div class="f-t-element f-t-element-first col-md-4 col-sm-6">
+                        <div class="f-t-e-title">LIÊN HỆ</div>
+                        <div class="f-t-e-content">
+                            <p>TRƯỜNG ĐẠI HỌC CÔNG NGHIỆP TP. HCM<br />
+                                Địa chỉ : Số 12 Nguyễn Văn Bảo, Phường 4,<br />
+                                Quận Gò Vấp, Thành phố Hồ Chí Minh<br />
+                                Điện thoại: <a href="tel:02838940390">0283.8940 390</a><br />
+                                Fax: <a href="tel:02839940954">0283.9940 954</a><br />
+                                Email: <a href="mailto:dhcn@iuh.edu.vn">dhcn@iuh.edu.vn</a></p>
+
+                        </div>
+                    </div>
+                    <div class="col-md-8" style="padding: 0;">
+                        <div class="f-t-element col-md-4 col-sm-6">
+                            <div class="f-t-e-title">Hoạt động khác</div>
+                            <div class="f-t-e-content">
+                                <ul>
+                                    <li>
+                                        <a target="" href="/vi/hoi-thi-tay-nghe-fi9" title="Hội thi tay nghề">
+                                            Hội thi tay nghề
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a target="" href="/vi/cau-lac-bo-s95.html" title="Câu lạc bộ nghiên cứu">
+                                            Câu lạc bộ nghiên cứu
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a target="" href="/vi/sinh-vien-tinh-nguyen-fi42"
+                                            title="Sinh viên tình nguyện">
+                                            Sinh viên tình nguyện
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a target="" href="/vi/cuu-sinh-vien-s98.html" title="Cựu sinh viên">
+                                            Cựu sinh viên
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a target="" href="/vi/ket-noi-doanh-nghiep-fi43" title="Kết nối doanh nghiệp">
+                                            Kết nối doanh nghiệp
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="f-t-element col-md-4 col-sm-6">
+                            <div class="f-t-e-title">Thông tin mở rộng</div>
+                            <div class="f-t-e-content">
+                                <ul>
+                                    <li>
+                                        <a target="" href="/vi/bao-chi-ve-iuh-fi8" title="Báo chí viết về IUH">
+                                            Báo chí viết về IUH
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a target="" href="/vi/kham-pha-fi33" title="Khám phá IUH">
+                                            Khám phá IUH
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a target="" href="/vi/ky-nang-mem-fi31" title="Kỹ năng mềm">
+                                            Kỹ năng mềm
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a target="" href="/vi/bo-suu-tap-fi32" title="Bộ sưu tập">
+                                            Bộ sưu tập
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a target="" href="/vi/dich-vu-khach-hang-s21.html" title="Dịch vụ khách hàng">
+                                            Dịch vụ khách hàng
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="f-t-element f-t-element-first-mobile col-md-4 col-sm-6">
+                            <div class="f-t-e-title">LIÊN HỆ</div>
+                            <div class="f-t-e-content">
+                                <p>TRƯỜNG ĐẠI HỌC CÔNG NGHIỆP TP. HCM<br />
+                                    Địa chỉ : Số 12 Nguyễn Văn Bảo, Phường 4,<br />
+                                    Quận Gò Vấp, Thành phố Hồ Chí Minh<br />
+                                    Điện thoại: <a href="tel:02838940390">0283.8940 390</a><br />
+                                    Fax: <a href="tel:02839940954">0283.9940 954</a><br />
+                                    Email: <a href="mailto:dhcn@iuh.edu.vn">dhcn@iuh.edu.vn</a></p>
+
+                            </div>
+                        </div>
+                        <div class="f-t-element f-t-element-end col-md-4 col-sm-6">
+                            <div class="f-t-e-title">Văn bản tiện ích</div>
+                            <div class="f-t-e-content">
+                                <ul>
+
+                                    <li>
+                                        <a target="" href="van-ban-tien-ich-fi19/qui-che-hoc-vu-a1153.html"
+                                            title="Quy chế-Quy định-Quy trình">
+                                            Quy chế-Quy định-Quy trình
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a target="" href="/vi/ba-cong-khai-fi47" title="Ba công khai">
+                                            Ba công khai
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a target="" href="/vi/van-ban-tien-ich-fi19/bieu-mau-dao-tao-a1149.html"
+                                            title="Biểu mẫu đào tạo">
+                                            Biểu mẫu đào tạo
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a target="" href="/vi/van-ban-tien-ich-fi19/quan-ly-khoa-hoc-a1436.html"
+                                            title="Quản lý khoa học">
+                                            Quản lý khoa học
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a target="" href="/vi/phan-hoi-s90.html" title="Phản hồi">
+                                            Phản hồi
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="f-t-element f-t-element-first-mobile-1 col-md-4 col-sm-6">
+                            <div class="f-t-e-title">LIÊN HỆ</div>
+                            <div class="f-t-e-content">
+                                <p>TRƯỜNG ĐẠI HỌC CÔNG NGHIỆP TP. HCM<br />
+                                    Địa chỉ : Số 12 Nguyễn Văn Bảo, Phường 4,<br />
+                                    Quận Gò Vấp, Thành phố Hồ Chí Minh<br />
+                                    Điện thoại: <a href="tel:02838940390">0283.8940 390</a><br />
+                                    Fax: <a href="tel:02839940954">0283.9940 954</a><br />
+                                    Email: <a href="mailto:dhcn@iuh.edu.vn">dhcn@iuh.edu.vn</a></p>
+
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-social">
+                        <div class="col-md-4 footer-logo">
+                            <a href="/vi">
+                                <img alt="" src="images/logo.png">
+                            </a>
+                        </div>
+                        <div class="col-md-8 f-s-right">
+                            <div class="col-md-7 col-sm-6 footer-statistic">
+                                <div class="footer-statistic-content">
+                                    <p style="margin-bottom: 7px; line-height: 0;">
+                                        <i class="fa fa-users"></i> Số lượt truy cập : 261,559,401
+                                    </p>
+                                    <ul>
+                                        <li><i class="fa fa-user"></i> Hôm nay : 18,074</li>
+                                        <li><i class="fa fa-user-plus"></i> Đang xem : 88</li>
+                                    </ul>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="col-md-5 col-sm-6 social-list">
+                                <ul>
+                                    <li style="color: #666; padding-right: 5px;">Chia sẻ</li>
+                                    <li><a target="_blank"
+                                            href="https://facebook.com/sharer/sharer.php?u=http%3A%2F%2Fiuh.edu.vn%2F"><img
+                                                alt="" src="images/social-network/icon-fb.png"></a></li>
+                                    <li><a target="_blank"
+                                            href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fiuh.edu.vn%2F"><img
+                                                alt="" src="images/social-network/icon-tw.png"></a></li>
+                                    <li><a target="_blank"
+                                            href="https://linkedin.com/cws/share?url=http%3A%2F%2Fiuh.edu.vn%2F"><img
+                                                alt="" src="images/social-network/icon-in.png"></a></li>
+                                    <!--
+                                        <li><a href="#"><img alt="" src="images/social-network/icon-yt.png"></a></li>
+                                        <li><a href="#"><img alt="" src="images/social-network/icon-rss.png"></a></li>
+                                        -->
+                                </ul>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="copyright">
+                        <div class="copyright-line"></div>
+                        <div class="copyright-left">
+                            <p>© Bản quyền 2015 - Trường Đại học Công nghiệp TP. Hồ Chí Minh<br />
+                                <span style="font-size:10px; font-weight:normal"><em>Mọi hành động sử dụng nội dung đăng
+                                        tải trên Website iuh.edu.vn phải có sự đồng ý bằng văn bản của Trường Đại học
+                                        Công nghiệp Tp. HCM.</em></span>
+                            </p>
+                        </div>
+                        <div class="copyright-right"></div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </footer>
+        <div class="clearfix"></div>
+        <div class="chat-popup" id="myForm">
+            <form action="/" method="post" class="form-container">
+                <h3 style="margin-top: 0;">Chatbot</h3>
+                <label for="msg"><b>Hỗ trợ thông tin tuyển sinh IUH</b></label>
+                <div id="chat-container">
+                    <div class="chat-container">
+                        <img src="images/chatbot.png" alt="Avatar" style="width:100%;">
+                        <p>Hello. How are you today?</p>
+                        <span class="time-right">11:00</span>
+                    </div>
+
+                    <div class="chat-container my-mess">
+                        <img src="images/user.png" alt="Avatar" class="right" style="width:100%;">
+                        <p>Hey! I'm fine. Thanks for asking!</p>
+                        <span class="time-left">11:01</span>
+                    </div>
+
+                    <div class="chat-container">
+                        <img src="images/chatbot.png" alt="Avatar" style="width:100%;">
+                        <p>Sweet! So, what do you wanna do today?</p>
+                        <span class="time-right">11:02</span>
+                    </div>
+
+                    <div class="chat-container my-mess">
+                        <img src="images/user.png" alt="Avatar" class="right" style="width:100%;">
+                        <p>Nah, I dunno. Play soccer.. or learn more coding perhaps?</p>
+                        <span class="time-left">11:05</span>
+                    </div>
+                    {{result}}
+                </div>
+                <textarea placeholder="Type message.." rows="2" name="request" id="msg" required></textarea>
+                <button type="submit" class="btn">Send</button>
+            </form>
+        </div>
+        <div class="mess-animation" id="mess-animation">
+            <img class="img-circle" src="images/message.png" alt="02839851917">
+            <a href="tel:02839851917">
+                <div id="div-tel">
+                    <span>02839851917</span>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        function toggleForm() {
+            if (document.getElementById("myForm").style.display === "block") {
+                document.getElementById("myForm").style.display = "none";
+                document.getElementById("div-tel").style.display = "block";
+            } else {
+                document.getElementById("div-tel").style.display = "none";
+                document.getElementById("myForm").style.display = "block";
+                document.getElementById("msg").focus();
+            }
+        }
+
+        document.getElementById("mess-animation").addEventListener("click", toggleForm)
+    </script>
+</body>
+
+</html>
