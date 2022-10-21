@@ -410,7 +410,7 @@
     }
     .category-student-background{
         background-size: 50px auto;
-        background: url("../image/left-event-1.png") left center no-repeat;
+        background: url("https://doananhtingithub40102.github.io/chatbot-tuyensinhIUH/template/images/left-event-1.png") left center no-repeat;
     }
     .category-student p{
         color: #1B1759;
@@ -442,19 +442,19 @@
         border-bottom: #DCDCDC solid 1px;
     }
     .content-top .img1, .content-top .img1-en{
-        background: url("../image/c-r-first-icon.png") left no-repeat;
+        background: url("https://doananhtingithub40102.github.io/chatbot-tuyensinhIUH/template/images/c-r-first-icon.png") left no-repeat;
     }
     .content-top .img2, .content-top .img2-en{
-        background: url("../image/c-r-second-icon.png") left no-repeat;
+        background: url("https://doananhtingithub40102.github.io/chatbot-tuyensinhIUH/template/images/c-r-second-icon.png") left no-repeat;
     }
     .content-top .img3, .content-top .img3-en{
-        background: url("../image/c-r-third-icon.png") left no-repeat;
+        background: url("https://doananhtingithub40102.github.io/chatbot-tuyensinhIUH/template/images/c-r-third-icon.png") left no-repeat;
     }
     .content-top .img4, .content-top .img4-en{
-        background: url("../image/c-r-four-icon.png") left no-repeat;
+        background: url("https://doananhtingithub40102.github.io/chatbot-tuyensinhIUH/template/images/c-r-four-icon.png") left no-repeat;
     }
     .content-top .img5, .content-top .img5-en{
-        background: url("../image/c-r-five-icon.png") left no-repeat;
+        background: url("https://doananhtingithub40102.github.io/chatbot-tuyensinhIUH/template/images/c-r-five-icon.png") left no-repeat;
     }
     .content-top .c-t-img{
         display: table-cell;
