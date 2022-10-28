@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 
 <head>
@@ -1396,12 +1396,8 @@
             }
         }
 
-        document.getElementById("today").innerText = getCurrentDate()
-        document.getElementById("mess-animation").addEventListener("click", toggleForm)
-
-        $(document).on('submit', '#myForm', function (e) {
-            e.preventDefault();
-            $.ajax({
+	  function ajax_submitForm() {
+		$.ajax({
                 type: 'POST',
                 url: '/',
                 data: {
@@ -1417,8 +1413,27 @@
 
 			  const element = document.getElementById("chat-container");
 			  element.scrollTop = element.scrollHeight;
+
+			  $("#msg").val("");
                 }
             })
+	  }
+
+
+        document.getElementById("today").innerText = getCurrentDate()
+        document.getElementById("mess-animation").addEventListener("click", toggleForm)
+
+	  $("#msg").on("keypress", function(e){	
+		let unicode = e.which;
+  		if(unicode === 13){
+  		    ajax_submitForm();
+  		}
+  	  });
+
+        $(document).on('submit', '#myForm', function(e) {
+            e.preventDefault();
+            ajax_submitForm();
+		$("#msg").focus();
         });
     </script>
 </body>
