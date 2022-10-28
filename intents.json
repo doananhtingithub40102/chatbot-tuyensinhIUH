@@ -1,11 +1,11 @@
 {"intents": [
         {"tag": "loi_chao",
-         "patterns": ["Chào", "Xin chào", "Thưa ad","Chào ad","chào anh chị"],
+         "patterns": ["Chào", "Xin chào", "Thưa admin","Chào admin","chào anh chị", "Hello admin ạ", "Hi ad"],
          "responses": ["Chào bạn, cần ad giúp gì?", "Rất vui được gặp bạn", "Xin chào, tôi có thể giúp gì cho bạn?"],
          "context": [""]
         },
         {"tag": "tam_biet",
-         "patterns": ["Chào tạm biệt", "Hẹn gặp lại", "Tạm biệt", "Bái bai"],
+         "patterns": ["Chào tạm biệt", "Hẹn gặp lại", "Tạm biệt", "Bái bai", "Bye", "See you again"],
          "responses": ["Hẹn gặp lại", "Tạm biệt"],
          "context": [""]
         },
@@ -21,17 +21,72 @@
         },
         {"tag": "iuh",
          "patterns": ["iuh", "dhcn", "đại học công nghiệp tphcm"],
-         "responses": ["Trường Đại học Công nghiệp Thành phố Hồ Chí Minh là một trường đại học định hướng ứng dụng và thực hành, trực thuộc Bộ Công Thương, chuyên đào tạo nhóm ngành kinh tế công nghiệp và kỹ thuật công nghiệp, được thành lập từ ngày 24 tháng 12 năm 2004.\nĐịa chỉ: 12 Nguyễn Văn Bảo, Phường 4, Gò Vấp, Thành phố Hồ Chí Minh"],
+         "responses": ["IUH - Trường Đại học Công nghiệp Thành phố Hồ Chí Minh là một trường đại học định hướng ứng dụng và thực hành, trực thuộc Bộ Công Thương, chuyên đào tạo nhóm ngành kinh tế công nghiệp và kỹ thuật công nghiệp, được thành lập từ ngày 24 tháng 12 năm 2004.\nĐịa chỉ: 12 Nguyễn Văn Bảo, Phường 4, Gò Vấp, Thành phố Hồ Chí Minh"],
          "context": [""]
         },
-	  {"tag": "ma_truong",
-         "patterns": ["mã trường"],
-         "responses": ["IUH"],
+        {"tag": "ma_truong",
+         "patterns": ["Mã tuyển sinh của Trường Đại học Công nghiệp Thành phố Hồ Chí Minh là gì?", "Mã tuyển sinh của trường?", "Mã tuyển sinh của trường tại cơ sở chính là gì?", "Mã tuyển sinh của trường Đại học Công nghiệp cơ sở chính?", "Mã trường"],
+         "responses": ["Mã tuyển sinh của trường Đại học Công nghiệp Thành phố Hồ Chí Minh là IUH"],
+         "context": [""]
+        },
+	  {"tag": "loai_truong",
+         "patterns": ["Trường Đại học Công nghiệp là trường công lập hay dân lập?","Đại học Công nghiệp là trường công hay trường tư?","Công lập hay Dân lập?","Loại trường?"],
+         "responses": ["Trường Đại học Công nghiệp Thành phố Hồ Chí Minh là trường Công lập"],
          "context": [""]
         },
 	  {"tag": "dia_chi",
-         "patterns": ["địa chỉ trường Đại học Công nghiệp Thành phố Hồ Chí Minh cơ sở 1 ?"],
+         "patterns": ["địa chỉ trường Đại học Công nghiệp Thành phố Hồ Chí Minh cơ sở 1 ?", "địa chỉ iuh"],
          "responses": ["Địa chỉ: Số 12 Nguyễn Văn Bảo, Phường 4, Quận Gò Vấp, Thành phố Hồ Chí Minh;"],
+         "context": [""]
+        },
+	  {"tag": "thu_vien",
+         "patterns": ["Trường mình có thư viện cho sinh viên mượn sách, ngồi học không?","Thư viện tại trường như thế nào?"],
+         "responses": ["Thư viện của Trường có hơn 500.000 bản sách và hơn 100.000 đầu sách điện tử; tại thư viện có phòng đọc được kết nối Internet"],
+         "context": [""]
+        },
+	  {"tag": "khuon_vien",
+         "patterns": ["Khuôn viên tại trường Đại học Công nghiệp như thế nào?", "Em muốn hỏi trường mình có các sân chơi thể thao nào không?","Sân trường như thế nào?"],
+         "responses": ["Trong khuôn viên của Trường có các sân chơi rộng rãi và sạch sẽ, sinh viên có thể tham gia các hoạt động thể dục, thể thao, các em có thể tham gia rèn luyện sức khỏe hoàn toàn miễn phí sau các buổi học."],
+         "context": [""]
+        },
+	  {"tag": "ngoai_khoa",
+         "patterns": ["Khi theo học tại Trường, sinh viên có được tham gia nhiều hoạt động ngoại khóa không ạ?", "Trường có tổ chức hoạt động ngoại khóa cho sinh viên không?","Hoạt động ngoại khóa?"],
+         "responses": ["Khi tham gia học tại Trường, các em sẽ được tham gia nhiều hoạt động ngoại Khóa do Trường và Đoàn Thanh Niên tổ chức. Hàng năm, đều có các hoạt động sôi nổi như: Ngày hội việc làm, các buổi Tư vấn hướng nghiệp, các hoạt động về nguồn, các buổi hội thi, hội thảo tập huấn kỹ năng mềm nhằm cung cấp những kỹ năng học tập và làm việc cho sinh viên."],
+         "context": [""]
+        },
+	  {"tag": "ky_tuc_xa",
+         "patterns": ["Tiện nghi ký túc xá tại trường?","Tiện nghị KTX tại trường?","Ký túc xá tiện nghi ra sao?","Ký túc xá tại Đại học Công nghiệp?"],
+         "responses": ["Ký túc xá nằm ngay trong khuôn viên của Nhà trường tại số 12 Nguyễn Văn Bảo, Phường 04, Quận Gò vấp, TP.HCM; gồm 2 tòa nhà cao tầng, trong đó tòa nhà I (13 tầng) và tòa nhà G (9 tầng), với 241 phòng đảm bảo chỗ ở cho hơn 3.500 sinh viên. 100% phòng ở được trang bị máy giặt, tủ đựng đồ cá nhân, WC khép kín và hệ thống internet riêng."],
+         "context": [""]
+        },
+	  {"tag": "an_ninh_ky_tuc_xa",
+         "patterns": ["Việc an ninh khi ở ký túc xá?","Ở ký túc xá thì giữ đồ đạc cá nhân bằng cách nào? Có hay mất đồ hay không?"],
+         "responses": ["Ở ký túc xá đồ đạc cá nhân sẽ được cất giữ tại phòng của các bạn, ký túc xá có hệ thống camera và bảo vệ thường xuyên đi tuần tra nên việc mất đồ sẽ là không có hoặc có cũng sẽ được tìm lại nhanh chóng. Các bạn yên tâm nhé."],
+         "context": [""]
+        },
+	  {"tag": "cach_dong_tien_KTX",
+         "patterns": ["Tiền ở ký túc xá sẽ đóng như thế nào?", "Cách đóng tiền ở ký túc xá?"],
+         "responses": ["Các bạn sẽ đóng tiền ký túc xá tại bộ phận kế toán của nhà trường. Sau đó sẽ cầm biên lai đóng tiền gửi lại cho bộ phận quản lý ký túc xá để đăng ký."],
+         "context": [""]
+        },
+	  {"tag": "nau_an_KTX",
+         "patterns": ["Bên ký túc xá mình có nấu ăn được không ạ?", "Có được nấu ăn ở trong ký túc xá không?", "Có được nấu ăn ở trong KTX không?", "Nấu ăn trong ký túc xá", "Nấu ăn trong KTX?"],
+         "responses": ["Vì để đảm bảo an toàn cháy nổ nhà trường không cho nấu ăn ở trong ký túc xá."],
+         "context": [""]
+        },
+	  {"tag": "gio_giac_KTX",
+         "patterns": ["Bên KTX mình giờ giấc tự do không ạ?", "Bên ký túc xá mình giờ giấc tự do không ạ?","Giờ giấc tại ký  túc xá?"],
+         "responses": ["Khi ở ký túc xá chúng ta cần phải đảm bảo giờ giấc, buổi tối ký túc xá sẽ đóng của vào lúc 22h00 hàng ngày"],
+         "context": [""]
+        },
+	  {"tag": "giat_giu_KTX",
+         "patterns": ["Bên KTX mình phơi đồ ở đâu ạ?","Bên ký túc xá mình phơi đồ ở đâu?","Chỗ phơi đồ tại ký túc xá như thế nào?","Chỗ phơi đồ tại KTX như thế nào?"],
+         "responses": ["Mỗi phòng sẽ có ban công riêng vì thế quần áo có thể phơi ở ban công của từng phòng"],
+         "context": [""]
+        },
+	  {"tag": "dan_nguoi_quen_KTX",
+         "patterns": ["Mình có cho bạn bè vào phòng được không ạ?","Mình có cho người thân vào phòng được không ạ?"],
+         "responses": ["Bạn bè người thân sẽ được vào thăm chơi với các bạn nếu có đầy đủ giấy tờ tùy thân và được bảo vệ đồng ý cho phép vào, ngoài ra sẽ phải rời khỏi ký túc xá trước khi ký túc xá đóng cửa là vào 22h00."],
          "context": [""]
         },
         {"tag": "nop_ho_so",
@@ -71,12 +126,67 @@
         },
 	  {"tag": "phuong_thuc_xet_tuyen",
          "patterns": ["Các phương thức xét tuyển tại trường Đại học Công Nghiệp Thành phố Hồ Chí Minh?", "Có bao nhiêu cách xét tuyển?", "Xét tuyển như thế nào?","Phương thức xét tuyển của trường Đại học Công nghiệp như thế nào?"],
-         "responses": ["Sử dụng 4 phương thức xét tuyển:Xét tuyển thẳng và Ưu tiên xét tuyển thằng; Xét tuyển sử dụng kết quả học tập THPT năm lớp 12; Xét tuyển sử dụng kết quả kỳ thi tốt nghiệp THPT; Xét tuyển sử dụng kết quả kỳ thi đánh giá năng lực do Đại học Quốc gia TP.HCM tổ chức"],
+         "responses": ["Trường có 4 phương thức tuyển sinh. cụ thể như sau:\n a) Xét tuyển thẳng và Ưu tiên xét tuyển thẳng đối với học sinh giỏi cấp tỉnh/thành phố, học sinh đạt giải kỳ thi Olympic ;Học sinh có học lực 3 năm lớp 10,11,12 xếp loại giỏi; Học sinh trường chuyên, lớp chuyên; Học sinh có Chứng chỉ IELTS từ 5.0 trở lên hoặc các Chứng chỉ quốc tế khác tương đương trong thời gian còn hiệu lực tính đến ngày 29/08/2022.\n b) Xét tuyển sử dụng kết quả học tập THPT năm lớp 12, ngưỡng nhận hồ sơ là tổng điểm 3 môn trong tổ hợp xét tuyển tối thiểu bằng 21.00 điểm. Riêng ngành Dược học, ngưỡng nhận hồ sơ là tổng điểm 3 môn trong tổ hợp xét tuyển tối thiểu bằng 24.00 điểm và có học lực năm lớp 12 xếp loại giỏi.\n c) Xét tuyển sử dụng kết quả kỳ thi tốt nghiệp THPT năm 2022.\n d) Xét tuyển sử dụng kết quả kỳ thi đánh giá năng lực do Đại học Quốc gia TP.HCM tổ chức năm 2022."],
          "context": [""]
         },
-        {"tag": "nhom_nganh_bacDH_CNTT",
+        {"tag": "nhom_nganh_CNTT",
          "patterns": ["Khoa CNTT tại trường đào tạo những chuyên ngành nào?", "Khoa CNTT bao nhiêu ngành?", "Nhóm ngành Công nghệ thông tin", "Nhóm ngành IT"],
-         "responses": ["Khoa CNTT đào tạo bậc đại học 5 ngành, gồm: Khoa học máy tính; Công nghệ thông tin, Hệ thống thông tin, Khoa học dữ liệu và Kỹ thuật phần mềm","Hiện tại Khoa CNTT tại trường đào tạo bậc đại học 5 ngành, gồm:Khoa học máy tính; Công nghệ thông tin, Hệ thống thông tin, Khoa học dữ liệu và Kỹ thuật phần mềm", "Nhóm ngành Công nghệ thông tin gồm các ngành: Công nghệ thông tin; Kỹ thuật phần mềm; Khoa học máy tính; Hệ thống thông tin; Khoa học dữ liệu (chỉ hệ đại trà)"],
+         "responses": ["Khoa CNTT đào tạo 5 ngành, gồm: Khoa học máy tính; Công nghệ thông tin, Hệ thống thông tin, Khoa học dữ liệu và Kỹ thuật phần mềm","Hiện tại Khoa CNTT tại trường đào tạo 5 ngành, gồm:Khoa học máy tính; Công nghệ thông tin, Hệ thống thông tin, Khoa học dữ liệu và Kỹ thuật phần mềm", "Nhóm ngành Công nghệ thông tin gồm các ngành: Công nghệ thông tin; Kỹ thuật phần mềm; Khoa học máy tính; Hệ thống thông tin; Khoa học dữ liệu (chỉ hệ đại trà)"],
+         "context": [""]
+        },
+        {"tag": "nhom_nganh_dien_dien_tu",
+         "patterns": ["Nhóm ngành điện - điện tử tại trường đào tạo những chuyên ngành nào?", "Nhóm ngành điện - điện tử bao nhiêu chuyên ngành?", "Nhóm ngành điện điện tử", "Công nghệ kỹ thuật điện, điện tử", "Nhóm ngành kỹ thuật điện tử"],
+         "responses": ["Công nghệ kỹ thuật điện, điện tử gồm 02 chuyên ngành: Công nghệ kỹ thuật điện, điện tử; Năng lượng tái tạo. Tuyển sinh cả CLC và đại trà, tổ hợp xét tuyển bao gồm: A00, A01, C01, D90"],
+         "context": [""]
+        },
+        {"tag": "nhom_nganh_tu_dong_hoa",
+         "patterns": ["Nhóm ngành tự động hóa tại trường đào tạo những chuyên ngành nào?", "Nhóm ngành tự động hóa bao nhiêu chuyên ngành?", "Nhóm ngành tự động hóa"],
+         "responses": ["Nhóm ngành tự động hóa gồm 02 chuyên ngành: Công nghệ kỹ thuật điều khiển và tự động hóa; Robot và hệ thống điều khiển thông minh. Tuyển sinh cả CLC và đại trà, tổ hợp xét tuyển bao gồm: A00, A01, C01, D90"],
+         "context": [""]
+        },
+        {"tag": "nhom_nganh_dien_tu_vien_thong",
+         "patterns": ["Nhóm ngành điện tử viễn thông tại trường đào tạo những chuyên ngành nào?", "Nhóm ngành điện tử - viễn thông bao nhiêu chuyên ngành?", "Công nghệ kỹ thuật điện tử -  viễn thông"],
+         "responses": ["Công nghệ kỹ thuật điện tử - viễn thông gồm 02 chuyên ngành: Điện tử công nghiệp; Kỹ thuật viễn thông. Tuyển sinh cả CLC và đại trà, tổ hợp xét tuyển bao gồm: A00, A01, C01, D90"],
+         "context": [""]
+        },
+        {"tag": "nhom_nganh_cong_nghe_hoa_hoc",
+         "patterns": ["Nhóm ngành hóa học tại trường đào tạo những chuyên ngành nào?", "Nhóm ngành công nghệ hóa học bao nhiêu chuyên ngành?"],
+         "responses": ["Nhóm ngành Công nghệ hóa học gồm 02 ngành: Công nghệ kỹ thuật hóa học; Kỹ thuật hóa phân tích.Tuyển sinh hệ đại trà và CLC, tổ hợp xét tuyển bao gồm: A00, B00, D07, C02"],
+         "context": [""]
+        },
+        {"tag": "nhom_nganh_ke_toan",
+         "patterns": ["Nhóm ngành kế toán tại trường đào tạo những chuyên ngành nào?", "Nhóm ngành kế toán bao nhiêu chuyên ngành?"],
+         "responses": ["Kế toán gồm 02 chuyên ngành: Kế toán; Thuế và kế toán. -Tuyển sinh hệ đại trà và CLC, tổ hợp xét tuyển bao gồm: A00, A01, D01, D90"],
+         "context": [""]
+        },
+        {"tag": "nganh_kiem_toan",
+         "patterns": ["Tổ hợp xét tuyển ngành kiểm toán"],
+         "responses": ["Kiểm toán: Tuyển sinh hệ đại trà và CLC, tổ hợp xét tuyển bao gồm: A00, A01, D01, D90"],
+         "context": [""]
+        },
+        {"tag": "nganh_cong_nghe_thuc_pham",
+         "patterns": ["Tổ hợp xét tuyển ngành công nghệ thực phẩm"],
+         "responses": ["Công nghệ thực phẩm: Tuyển sinh hệ đại trà và CLC, tổ hợp xét tuyển bao gồm: A00, B00, D07, D90"],
+         "context": [""]
+        },
+        {"tag": "nganh_dinh_duong_va_khoa_hoc_thuc_pham",
+         "patterns": ["Tổ hợp xét tuyển ngành dinh dưỡng và khoa học thực phẩm"],
+         "responses": ["Dinh dưỡng và Khoa học thực phẩm: Tuyển sinh hệ đại trà, tổ hợp xét tuyển bao gồm: A00, B00, D07, D90"],
+         "context": [""]
+        },
+        {"tag": "nganh_dam_bao_chat_luong_an_toan_thuc_pham",
+         "patterns": ["Tổ hợp xét tuyển ngành đảm bảo chất lượng và an toàn thực phẩm"],
+         "responses": ["Đảm bảo chất lượng và An toàn thực phẩm: Tuyển sinh hệ đại trà, tổ hợp xét tuyển bao gồm: A00, B00, D07, D90"],
+         "context": [""]
+        },
+        {"tag": "nganh_cong_nghe_ky_thuat_may_tinh",
+         "patterns": ["Tổ hợp xét tuyển ngành công nghệ kỹ thuật máy tính", "Tổ hợp công nghệ KTMT"],
+         "responses": ["Công nghệ kỹ thuật máy tính: Tuyển sinh cả CLC và đại trà, tổ hợp xét tuyển bao gồm: A00, A01, C01, D90"],
+         "context": [""]
+        },
+        {"tag": "nganh_iot_va_tri_tue_nhan_tao_ud",
+         "patterns": ["Tổ hợp xét tuyển ngành IOT và Trí tuệ nhân tạo ứng dụng", "Tổ hợp ngành IOT và AI ứng dụng"],
+         "responses": ["IOT và Trí tuệ nhân tạo ứng dụng: Tuyển sinh hệ đại trà, tổ hợp xét tuyển bao gồm: A00, A01, C01, D90"],
          "context": [""]
         },
         {"tag": "he_dao_tao_va_thoi_gian",
@@ -84,14 +194,14 @@
          "responses": ["– Đào tạo trình độ đại học chính quy: thực hiện 3,5 – 4,5 năm;\n – Đào tạo trình độ đại học liên thông từ trung cấp: thực hiện 2,5 – 3,5 năm;\n – Đào tạo trình độ đại học liên thông từ cao đẳng: thực hiện 1,5 – 2 năm;\n – Đào tạo trình độ đại học vừa làm vừa học: thực hiện 4 – 5 năm;\n – Đào tạo trình độ đại học liên thông đại học – đại học: thực hiện 2,5 – 3 năm;\n – Đào tạo trình độ cao đẳng: thực hiện 2,5 năm.\n"],
          "context": [""]
         },
+	  {"tag": "viec_lam_ban_thoi_gian",
+         "patterns": ["Trường có giới thiệu việc làm thêm cho sinh viên không? Làm bán thời gian vừa học vừa làm trong thời gian học tại Trường?"],
+         "responses": ["Đoàn Thanh niên của trường có giới thiệu việc làm bán thời gian cho sinh viên khi đang theo học tại Trường."],
+         "context": [""]
+        },
         {"tag": "vi_tri_viec_lam_HTTT",
          "patterns": ["Vị trí việc làm sao khi tốt nghiệp ngành Hệ thống thông tin?", "Sinh viên ngành Hệ thống thông tin có thể làm những công việc gì sau khi tốt nghiệp?", "Sinh viên ngành Hệ thống thông tin tốt nghiệp làm gì?", "Sinh viên ngành Hệ thống thông tin sau khi tốt nghiệp sẽ làm những việc gì?", "Các công việc sinh viên ngành Hệ thống thông tin có thể đảm nhận sau khi tốt nghiệp?"],
          "responses": ["– Phân tích viên hệ thống (systems analysis, business analysis), tích hợp hệ thống (system integrator), quản trị cơ sở dữ liệu (database administrator).\n – Quản trị hệ thống thông tin trong cơ quan, xí nghiệp.\n – Lập trình quản lý cơ sở dữ liệu (database developer).\n – Quản lý cơ sở dữ liệu, hỗ trợ ra quyết định cho lãnh đạo.\n – Đào tạo và hướng dẫn các nhân viên ở các bộ phận khác sử dụng thông tin và hệ thống một cách có hiệu quả.\n – Đảm nhận vai trò của một CIO (giám đốc thông tin).\n – Cán bộ quản lý dự án trong các hướng ngành đang có nhu cầu rất lớn của xã hội:thương mại điện tử (e-commerce), chính phủ điện tử (e-government), các hệ thống thông tin địa lý (GIS)...\n – Nghiên cứu viên, giảng viên.\n – Phân tích thiết kế và xây dựng các hệ thống thông tin.\n – Lập trình ứng dụng, phát triển web, lập trình cho các thiết bị di động, đặc biệt là trong lĩnh vực thương mại điện tử.\n – Tham gia quản lý các dự án phát triển phần mềm.\n – Triển khai các hệ thống bảo mật an toàn thông tin cho tổ chức.\n"],
-         "context": [""]
-        },
-        {"tag": "ma_truong",
-         "patterns": ["Mã tuyển sinh của Trường Đại học Công nghiệp Thành phố Hồ Chí Minh là gì?", "Mã tuyển sinh của trường?", "Mã tuyển sinh của trường tại cơ sở chính là gì?", "Mã tuyển sinh của trường Đại học Công nghiệp cơ sở chính?", "Mã trường"],
-         "responses": ["Mã tuyển sinh của trường Đại học Công nghiệp Thành phố Hồ Chí Minh là IUH"],
          "context": [""]
         },
         {"tag": "ma_nganh_CNTT",
@@ -142,6 +252,21 @@
 	  {"tag": "diem_chuan_cua_truong",
          "patterns": ["Điểm chuẩn của Trường khoảng bao nhiêu điểm vậy?"],
          "responses": ["Điểm chuẩn phương thức XÉT ĐIỂM THI: 2020 – 15.00 điểm; 2021 – 16.00 điểm.\n Điểm chuẩn phương thức XÉT HỌC BẠ: 2020 – 18.00 điểm; 2021 – 18.00 điểm.\n Điểm chuẩn phương thức XÉT ĐIỂM ĐGNL: 2021 – 600 điểm.\n"],
+         "context": [""]
+        },
+	  {"tag": "diem_trung_tuyen",
+         "patterns": ["Điểm chuẩn Đại học Công nghiệp 2022 là bao nhiêu?","Điểm chuẩn năm nay bao nhiêu của trường năm nay là bao nhiêu?","Điểm chuẩn 2022 tại Đại học Công nghiệp?"],
+         "responses": ["Tại cơ sở TP.HCM, mức điểm chuẩn cho các thí sinh thuộc khu vực 3, (không thuộc diện ưu tiên chính sách) vào các ngành/nhóm ngành như sau:\n- Kinh doanh quốc tế: 26 điểm\n- Nhóm Ngành tự động hóa: 23.5 điểm\n- Nhóm Ngành Công nghệ kỹ thuật điện tử - viễn thông: 21.5 điểm\n- Công nghệ kỹ thuật máy tính: 24 điểm\n- IOT và trí tuệ nhân tạo ứng dụng: 22.5 điểm\n- Công nghệ kỹ thuật cơ khí: 22 điểm\n- Công nghệ kỹ thuật cơ điện tử: 22.5 điểm\n- Công nghệ chế tạo máy: 22 điểm\n- Công nghệ kỹ thuật ô tô: 24.5 điểm\n- Công nghệ kỹ thuật nhiệt: 19.5 điểm\n- Kỹ thuật xây dựng: 19 điểm\n- Kỹ thuật xây dựng công trình giao thông: 19 điểm\n- Công nghệ dệt, may: 19 điểm\n- Thiết kế thời trang: 21.25 điểm\n- Nhóm ngành Công nghệ thông tin: 26 điểm\n- Nhóm ngành Công nghệ hóa học: 19 điểm\n- Công nghệ thực phẩm: 20 điểm\n- Dinh dưỡng và Khoa học thực phẩm: 19 điểm\n- Đảm bảo chất lượng và an toàn thực phẩm: 19 điểm\n- Ngành công nghệ sinh học: 22.5 điểm\n- Nhóm ngành Quản lý đất đai và Kinh tế tài nguyên: 19 điểm\n- Nhóm ngành Quản lý tài nguyên môi trường: 19 điểm\n- Kế toán: 25 điểm\n- Kiểm toán: 25 điểm\n- Tài chính ngân hàng: 24.75 điểm\n- Quản trị kinh doanh: 25.5 điểm\n- Marketing: 26 điểm\n- Nhóm ngành Quản trị dịch vụ du lịch và lữ hành: 22.25 điểm\n- Công nghệ kỹ thuật điện, điện tử: 22.25\n- Thương mại điện tử: 25.5\n- Ngôn ngữ Anh: 22.25 điểm\n- Luật kinh tế: 27 điểm\n- Luật quốc tế: 25 điểm\n- Dược học: 23 điểm"],
+         "context": [""]
+        },
+	  {"tag": "hoc_phi",
+         "patterns": ["Học phí tại trường Đại học Công Nghiệp Thành phố Hồ Chí Minh khoảng bao nhiêu?","Học phí tại trường là bao nhiêu một năm?","Một năm học phí tại trường Đại học Công nghiệp là bao nhiêu?","Học phí?"],
+         "responses": ["Học phí Đại học Công nghiệp TP.HCM 2022 - 2023 như sau:\n- Khối ngành Kinh tế: 25.400.000 VNĐ/năm;\n- Khối Công nghệ Kỹ thuật: 27.800.000 VNĐ/năm"],
+         "context": [""]
+        },
+	  {"tag": "che_do_mien_giam",
+         "patterns": ["Chế độ ưu tiên, miễn giảm và hỗ trợ học phí của Trường?","Nhà trường có hỗ trợ học phí hay không?","Hỗ trợ học phí của nhà trường?"],
+         "responses": ["Trường thực hiện chế độ miễn, giảm về học phí cho sinh viên thuộc đối tượng chính sách theo đúng quy định hiện hành. Sinh viên có hoàn cảnh khó khăn được Trường xem xét miễn giảm học phí."],
          "context": [""]
         },
 	  {"tag": "tai_khoan_ngan_hang_IUH",
